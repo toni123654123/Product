@@ -1,9 +1,8 @@
 package iserver;
-
-import iserver.IService;
 import sanpham.Product;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class ProductService implements IService<Product> {
@@ -78,4 +77,12 @@ public class ProductService implements IService<Product> {
     public List<Product> findAll() {
         return products;
     }
+
+//    @Override
+//    public List<Product> sortByPrice(){
+//
+//        Collections.sort(products);
+//        return products;
+//    }
+
 }

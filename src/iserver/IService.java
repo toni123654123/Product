@@ -9,4 +9,5 @@ public interface IService<T> {
     T findByID(Integer id);
     List<T> findByName(String name);
     List<T> findAll();
+    List<T> sortByPrice();
 }
